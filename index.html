@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ArXIF</title>
+    <!-- <script type="text/javascript" src="populate.js"></script> -->
+    
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  
+  <body>
+      <nav class="teal darken-4" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#front" class="brand-logo right">ArXIF</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a id="about" href="#">about</a></li>
+            <li><a id="changelog" href="#">changelog</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a id="about" href="#">About</a></li>
+            <li><a id="changelog" href="#">Changelog</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="container">
+      <div class="section">
+        <ul id="collapSub" class="collapsible popout" data-collapsible="accordion">
+        </ul>
+        <h1 id="subjectName"></h1>
+        <div id="contents"></div>
+      </div>
+      
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="navigate.js"></script>
+      <script type="text/javascript" src="populate.js"></script>
+    </div>
+  </body>
+</html>
