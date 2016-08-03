@@ -47,7 +47,7 @@ window.onload = function(){
 			c.forEach(function(dls) {
 				mat = dls.split(",")
 				var list = document.createElement("a");
-					list.setAttribute("href", "sub/" + section + "/" + mat[1]);
+					list.setAttribute("href", "sub/" + section.toLowerCase() + "/" + mat[1]);
 					list.className = "collection-item";
 					list.innerHTML = mat[0];
 				subContain.appendChild(list);
