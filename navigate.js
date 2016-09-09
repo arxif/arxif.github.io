@@ -9,7 +9,4 @@ $(function(){
 	$("#about").click(function(){
 		Materialize.toast("contact: steve", 2500);
 	});
-	$("#changelog").click(function(){
-		Materialize.toast("02.08.16: +sejarah, +bio", 2500);
-	})
 });
