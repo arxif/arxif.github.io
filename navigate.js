@@ -9,4 +9,6 @@ $(function(){
 	$("#about").click(function(){
 		Materialize.toast("contact: steve", 2500);
 	});
+  
+	document.getElementById("loading-row").remove()
 });
