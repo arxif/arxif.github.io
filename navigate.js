@@ -1,5 +1,9 @@
+var tg = 1
 $(function(){
-	$(".button-collapse").sideNav({
+  $("#collapSubOne").hide();
+  $("#collapSubTwo").show();
+	
+  $(".button-collapse").sideNav({
 		closeOnClick: true
 	});
 	$("#subject").change(function(){
@@ -9,6 +13,15 @@ $(function(){
 	$("#about").click(function(){
 		Materialize.toast("contact: steve", 2500);
 	});
+  $("#semester").click(function(){
+    if (tg == 1) {
+      $("#collapSubOne").fadeToggle('fast','swing',
+      $("#collapSubTwo").fadeToggle());
+      } else {
+      $("#collapSubTwo").fadeToggle('fast','swing',
+      $("#collapSubOne").fadeToggle());
+    }
+  });
   
 	document.getElementById("loading-row").remove()
 });
